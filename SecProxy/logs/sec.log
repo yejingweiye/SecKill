@@ -1,0 +1,237 @@
+2021/11/17 22:32:49.728 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 22:32:49.728 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 22:32:49.728 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0007801b0 1029:0xc000780180] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 22:32:49.728 [I] [main.go:18]  init sec success
+2021/11/17 22:32:49.729 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 22:32:49.735 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 22:32:58.171 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    302.171µs|   match|[97;44m GET     [0m /secinfo   r:/secinfo
+2021/11/17 22:33:47.423 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 22:33:47.424 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 22:33:47.424 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0000c22d0 1029:0xc0000c22a0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 22:33:47.424 [I] [main.go:18]  init sec success
+2021/11/17 22:33:47.424 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 22:33:47.429 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 22:33:57.849 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    289.261µs|   match|[97;44m GET     [0m /secinfo   r:/secinfo
+2021/11/17 22:34:17.057 [D] [server.go:2887]  |            ::1|[97;43m 404 [0m|    217.511µs| nomatch|[97;44m GET     [0m /SecKill
+2021/11/17 22:34:49.618 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     96.081µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:52.739 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    129.353µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:55.752 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     77.816µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:55.954 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:55.954322 +0800 CST m=+68.544137864})
+2021/11/17 22:34:55.954 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    236.157µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:56.133 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    153.451µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:56.325 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:56.325654 +0800 CST m=+68.915473766})
+2021/11/17 22:34:56.325 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    154.345µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:56.628 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:56.628784 +0800 CST m=+69.218605712})
+2021/11/17 22:34:56.628 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    220.782µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:56.831 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:56.831126 +0800 CST m=+69.420950212})
+2021/11/17 22:34:56.831 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    259.074µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:57.101 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     91.005µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:57.450 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:57.450419 +0800 CST m=+70.040248670})
+2021/11/17 22:34:57.450 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    217.761µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:57.708 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:57.708935 +0800 CST m=+70.298766970})
+2021/11/17 22:34:57.709 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    199.176µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:57.888 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:57.888283 +0800 CST m=+70.478116831})
+2021/11/17 22:34:57.888 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    137.697µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:58.091 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    147.905µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:58.406 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:58.406799 +0800 CST m=+70.996636843})
+2021/11/17 22:34:58.407 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    486.208µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:58.655 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:58.655817 +0800 CST m=+71.245657383})
+2021/11/17 22:34:58.655 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    205.344µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:58.856 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:58.856001 +0800 CST m=+71.445843767})
+2021/11/17 22:34:58.856 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    217.716µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:59.217 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    105.486µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:59.407 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:59.407549 +0800 CST m=+71.997396066})
+2021/11/17 22:34:59.407 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     256.53µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:59.767 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:59.76767 +0800 CST m=+72.357520570})
+2021/11/17 22:34:59.767 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    149.382µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:34:59.959 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:34:59.959268 +0800 CST m=+72.549121085})
+2021/11/17 22:34:59.959 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    210.488µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:00.104 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    102.647µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:00.273 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:00.273251 +0800 CST m=+72.863106166})
+2021/11/17 22:35:00.273 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     176.85µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:00.408 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:00.408472 +0800 CST m=+72.998329135})
+2021/11/17 22:35:00.408 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    234.016µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:01.950 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     110.94µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:02.793 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    163.413µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:03.480 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     94.246µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:03.660 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:03.660615 +0800 CST m=+76.250501934})
+2021/11/17 22:35:03.660 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    167.968µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:03.817 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:03.817147 +0800 CST m=+76.407035471})
+2021/11/17 22:35:03.817 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     179.38µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:04.020 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     82.301µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:04.257 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:04.257829 +0800 CST m=+76.847720457})
+2021/11/17 22:35:04.258 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    217.503µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:04.401 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:04.401414 +0800 CST m=+76.991307554})
+2021/11/17 22:35:04.401 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    187.488µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:06.472 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    119.913µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:07.035 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     100.53µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:07.541 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:07.541201 +0800 CST m=+80.131122916})
+2021/11/17 22:35:07.541 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    249.687µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:08.182 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    133.573µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:08.530 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:08.530956 +0800 CST m=+81.120887475})
+2021/11/17 22:35:08.531 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    197.429µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:35:08.734 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:35:08.734406 +0800 CST m=+81.324339488})
+2021/11/17 22:35:08.734 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     163.68µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:36:29.424 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 22:36:29.424 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 22:36:29.425 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0000c2300 1029:0xc0000c22d0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 22:36:29.425 [I] [main.go:18]  init sec success
+2021/11/17 22:36:29.425 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 22:36:29.432 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 22:36:33.086 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    178.968µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:36:38.710 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    163.533µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:36:38.878 [W] [skill.go:51]  anti busy, req[0] %!(EXTRA *service.SecRequest=&{1027     0  2021-11-17 22:36:38.878788 +0800 CST m=+9.468875649})
+2021/11/17 22:36:38.879 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    347.621µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:36:39.071 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    127.245µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 22:48:13.419 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 22:48:13.419 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 22:48:13.419 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0002b6150 1029:0xc0002b6120] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 22:48:13.419 [I] [main.go:18]  init sec success
+2021/11/17 22:48:13.420 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 22:48:13.430 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 22:48:14.683 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 22:48:14.683 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 22:48:14.683 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c3c0 1029:0xc00003c390] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 22:48:14.683 [I] [main.go:18]  init sec success
+2021/11/17 22:48:14.683 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 22:48:14.689 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:00:20.445 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     483.88µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:00:21.068 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     91.223µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:00:21.275 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    128.818µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:00:22.412 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    189.467µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:00:22.649 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     61.419µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:00:22.835 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|     128.34µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:15:40.172 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:15:40.172 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:15:40.172 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c4b0 1029:0xc00003c450] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:15:40.172 [I] [main.go:18]  init sec success
+2021/11/17 23:15:40.173 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:15:40.181 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:15:52.372 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:15:52.372 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:15:52.372 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0000c23f0 1029:0xc0000c22a0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:15:52.372 [I] [main.go:18]  init sec success
+2021/11/17 23:15:52.373 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:15:52.381 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:15:57.265 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:15:57.265 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:15:57.265 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0002a6600 1029:0xc0002a65d0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:15:57.265 [I] [main.go:18]  init sec success
+2021/11/17 23:15:57.265 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:15:57.275 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:16:06.095 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:16:06.095 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:16:06.096 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00001e150 1029:0xc00001e120] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:16:06.096 [I] [main.go:18]  init sec success
+2021/11/17 23:16:06.096 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:16:06.106 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:17:10.431 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:17:10.431 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:17:10.432 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c870 1029:0xc00003c840] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:17:10.432 [I] [main.go:18]  init sec success
+2021/11/17 23:17:10.432 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:17:10.438 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:17:49.668 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:17:49.668 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:17:49.668 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc000012150 1029:0xc000012120] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:17:49.668 [I] [main.go:18]  init sec success
+2021/11/17 23:17:49.668 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:17:49.675 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:18:17.999 [D] [value.go:476]  request:[&{1027     0  2021-11-17 23:18:17.999213 +0800 CST m=+28.345211549 [::1]:53414}]
+2021/11/17 23:18:17.999 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    427.816µs|   match|[97;44m GET     [0m /seckill   r:/seckill
+2021/11/17 23:20:29.133 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:20:29.133 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:20:29.134 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0000d06f0 1029:0xc0000d06c0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:20:29.134 [I] [main.go:18]  init sec success
+2021/11/17 23:20:29.134 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:20:29.141 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:21:11.350 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:21:11.350 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:21:11.350 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0000c2450 1029:0xc0000c2420] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:21:11.350 [I] [main.go:18]  init sec success
+2021/11/17 23:21:11.351 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:21:11.358 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:22:02.325 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:22:02.325 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:22:02.325 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c540 1029:0xc00003c510] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:22:02.325 [I] [main.go:18]  init sec success
+2021/11/17 23:22:02.325 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:22:02.331 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:23:45.298 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:23:45.298 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:23:45.298 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c570 1029:0xc00003c540] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:23:45.298 [I] [main.go:18]  init sec success
+2021/11/17 23:23:45.298 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:23:45.305 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:26:53.980 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:26:53.980 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:26:53.980 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc000132300 1029:0xc0001322d0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:26:53.980 [I] [main.go:18]  init sec success
+2021/11/17 23:26:53.980 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:26:53.986 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:28:46.992 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:28:46.992 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:28:46.992 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00014c180 1029:0xc00014c150] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:28:46.992 [I] [main.go:18]  init sec success
+2021/11/17 23:28:46.992 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:28:47.000 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:31:27.559 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:31:27.559 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:31:27.559 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00013a600 1029:0xc00013a5d0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1}
+2021/11/17 23:31:27.559 [I] [main.go:18]  init sec success
+2021/11/17 23:31:27.559 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:31:27.565 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:31:42.552 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:31:42.552 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:31:42.552 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc000616240 1029:0xc000616210] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 }
+2021/11/17 23:31:42.552 [I] [main.go:18]  init sec success
+2021/11/17 23:31:42.552 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:31:42.559 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:31:50.227 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:31:50.227 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:31:50.227 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c780 1029:0xc00003c750] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 []}
+2021/11/17 23:31:50.227 [I] [main.go:18]  init sec success
+2021/11/17 23:31:50.228 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:31:50.235 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:32:35.053 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:32:35.053 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:32:35.053 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c3c0 1029:0xc00003c390] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 []}
+2021/11/17 23:32:35.053 [I] [main.go:18]  init sec success
+2021/11/17 23:32:35.053 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:32:35.059 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:33:38.544 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:33:38.544 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:33:38.544 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c540 1029:0xc00003c510] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 []}
+2021/11/17 23:33:38.544 [I] [main.go:18]  init sec success
+2021/11/17 23:33:38.545 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:33:38.552 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:34:45.085 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:34:45.085 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:34:45.085 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00013a4b0 1029:0xc00013a480] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 [localhost baidu.com qq.com/secskill]}
+2021/11/17 23:34:45.085 [I] [main.go:18]  init sec success
+2021/11/17 23:34:45.086 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:34:45.093 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/17 23:34:50.424 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/17 23:34:50.424 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/17 23:34:50.424 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc00003c420 1029:0xc00003c3f0] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 [localhost baidu.com qq.com/secskill]}
+2021/11/17 23:34:50.424 [I] [main.go:18]  init sec success
+2021/11/17 23:34:50.425 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/17 23:34:50.431 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/20 18:39:20.389 [E] [init.go:171]  ping redis failed, err:dial tcp 127.0.0.1:6379: connect: connection refused
+2021/11/20 18:39:20.389 [E] [main.go:18]  init redis failed, err: dial tcp 127.0.0.1:6379: connect: connection refused
+2021/11/20 18:40:59.905 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/20 18:40:59.905 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/20 18:40:59.908 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0002b6240 1029:0xc0002b6210] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 [localhost baidu.com qq.com/secskill] 50 map[] map[] 0xc0000ca230 <nil> <nil> {{0 0} 0 0 0 0}}
+2021/11/20 18:40:59.909 [I] [main.go:18]  init sec success
+2021/11/20 18:40:59.909 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/20 18:40:59.918 [I] [asm_amd64.s:1371]  http server Running on http://:8080
+2021/11/20 18:41:11.891 [D] [server.go:2887]  |            ::1|[97;42m 200 [0m|    216.254µs|   match|[97;44m GET     [0m /secinfo   r:/secinfo
+2021/11/20 18:41:12.000 [D] [server.go:2887]  |            ::1|[97;43m 404 [0m|      368.3µs| nomatch|[97;44m GET     [0m /favicon.ico
+2021/11/20 19:45:17.907 [E] [init.go:171]  ping redis failed, err:dial tcp 127.0.0.1:6379: connect: connection refused
+2021/11/20 19:45:17.907 [E] [main.go:18]  init redis failed, err: dial tcp 127.0.0.1:6379: connect: connection refused
+2021/11/20 19:46:10.412 [D] [init.go:183]  key [0], value [key:"/oldboy/backbend/secskill/product" create_revision:2 mod_revision:2 version:1 value:"[{\"ProductId\":1029,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":1000,\"Left\":1000},{\"ProductId\":1027,\"StartTime\":1505008800,\"EndTime\":1505012400,\"Status\":0,\"Total\":2000,\"Left\":1000}]" ]
+2021/11/20 19:46:10.412 [D] [init.go:183]  sec info conf is [[{1029 1505008800 1505012400 0 1000 1000} {1027 1505008800 1505012400 0 2000 1000}]]
+2021/11/20 19:46:10.417 [D] [init.go:189]  init service succ,conf:&{{127.0.0.1:6379 16 0 300} {127.0.0.1:6379 16 0 300} {127.0.0.1:2379 5 /oldboy/backbend/secskill /oldboy/backbend/secskill/product} {./logs/sec.log debug} map[1027:0xc0002ec2a0 1029:0xc0002ec270] {{0 0} 0 0 0 0} IJIuPsuxCCw0F8AgMoi0p1NmEbUyH6Xt 1 [localhost baidu.com qq.com/secskill] 50 map[] map[] 0xc0002ca1c0 <nil> <nil> {{0 0} 0 0 0 0} 16 16 <nil> 0}
+2021/11/20 19:46:10.438 [I] [main.go:18]  init sec success
+2021/11/20 19:46:10.440 [D] [asm_amd64.s:1371]  begin watch key;/oldboy/backbend/secskill/product
+2021/11/20 19:46:10.457 [I] [asm_amd64.s:1371]  http server Running on http://:8080
